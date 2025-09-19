@@ -117,7 +117,7 @@ services:
     environment:
       - PUID=568
       - PGID=568
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     networks:
       - media_network
     volumes:
@@ -133,7 +133,7 @@ services:
     environment:
       - PUID=568
       - PGID=568
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     networks:
       - media_network
     volumes:
@@ -147,7 +147,7 @@ services:
     ports:
       - 5055:5055
     environment:
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     networks:
       - media_network
     user: "568:568"
@@ -161,7 +161,7 @@ services:
       - LOG_LEVEL=info
       - LOG_HTML=false
       - CAPTCHA_SOLVER=none
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     networks:
       - media_network
     ports:
@@ -189,7 +189,7 @@ services:
     environment:
       - PUID=568
       - PGID=568
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     networks:
       - media_network
     volumes:
@@ -201,7 +201,7 @@ services:
     environment:
       - PUID=568
       - PGID=568
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
     image: lscr.io/linuxserver/jellyfin:latest
     ports:
       - '8096:8096'
@@ -222,7 +222,7 @@ services:
       - PUID=568
       - PGID=568
       - UMASK=002
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
       - WEBUI_PORTS=8080/tcp,8080/udp
       - VPN_ENABLED=true
       - VPN_CONF=wg0
@@ -260,7 +260,7 @@ services:
   watchtower:
     container_name: watchtower
     environment:
-      - TZ=America/New_York
+      - TZ=Europe/Warsaw
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_NOTIFICATIONS_HOSTNAME=TrueNAS
       - WATCHTOWER_INCLUDE_STOPPED=true
